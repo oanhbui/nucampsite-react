@@ -195,7 +195,9 @@ function CampsiteInfo(props) {
                             </BreadcrumbItem>
                             <BreadcrumbItem active>{props.campsite.name}</BreadcrumbItem>
                         </Breadcrumb>
-                        <h2>{props.campsite.name}</h2>
+                        <FadeTransform in transformProps={{ exitTransform: 'scale(0.5) translateY(-50%)' }}>
+                            <h2>{props.campsite.name}</h2>
+                        </FadeTransform>
                         <hr />
                     </div>
                 </div>
